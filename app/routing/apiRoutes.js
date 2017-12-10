@@ -18,9 +18,9 @@ function initRoutes(app) {
     app.post("/api/friends", function(req, res) {
         var newextroverts = req.body;
         newextroverts.routeName = newextroverts.name.replace(/\s+/g, "").toLowerCase();
-
-        console.log(newextroverts);
-
+        for (var i = 0; i < newextroverts.length; i++) {
+            console.log(newextroverts[i]);
+        }
         extroverts.push(newextroverts);
 
         res.json(newextroverts);

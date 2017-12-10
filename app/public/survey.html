@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder Survey</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Survey Questionare</h1>
+            <hr>
+        </div>
+        <br>
+        <div class="panel-body">
+            <form method="POST" role="form">
+                <h3> Please provide your name.</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <h3> Please provide a link to a picture of you.</h3>
+                <div class="form-group">
+                    <label for="name">Picture link</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h2>From a scale of 1 - 5: 1 means your strongly agree & 5 means your strongly disagree</h2>
+        <hr>
+        <ol>
+            <h3>
+                <li>The color red means love</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q1">
+                <form method="POST" role="form">
+                    <h2>
+                        <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                        <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                        <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                        <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                        <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                    </h2>
+                </form>
+            </div>
+            <br>
+            <h3>
+                <li>The color blue means loyalty</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q2">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color green means life</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q3">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color orange means rebelion</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q4">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color grey means nuetral</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q5">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color black means infinity</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q6">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color purple means ambition</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q7">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color brown means earth</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q8">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color gold means wealth</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q9">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+            <br>
+            <h3>
+                <li>The color silver means wisdom</li>
+            </h3>
+            <div class="btn-group" data-placeholder="" role="group" aria-label="First group" id="q10">
+                <h2>
+                    <button type="button" class="btn btn-lg btn-primary" value="1">1</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="2">2</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="3">3</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="4">4</button>
+                    <button type="button" class="btn btn-lg btn-primary" value="5">5</button>
+                </h2>
+            </div>
+        </ol>
+        <hr>
+        <div class="text-left">
+            <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-heart"></span> Find your Friend</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // CSS maybe
+
+
+
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function() {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function() {
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", userData, function(data) {
+
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+
+                });
+            }
+            else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+</body>
+
+</html>

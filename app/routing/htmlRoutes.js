@@ -23,9 +23,16 @@ app.use(bodyParser.json());
 //
 //   * A GET Route to `/survey` which should display the survey page.
 app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "survey.html"));
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
 });
 //   * A default, catch-all route that leads to `home.html` which displays the home page.
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
+// * is a wildcard.  It wll take any route and if nothing matches, it will take you
+//back to home.html.
+// app.get("/api", function(req, res) {
+//     res.sendFile(path.join(__dirname, "../data/friends.js"));
+// });
+app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
 });
+
+module.exports = app;
