@@ -1,5 +1,5 @@
 var extroverts = [{
-        routeName: "Tom",
+        name: "Tom",
         photo: "https://tctechcrunch2011.files.wordpress.com/2011/07/tom-anderson.jpg",
         score: [4, 3, 2, 1, 4, 5, 5, 3, 2, 1]
     },

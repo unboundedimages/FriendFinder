@@ -6,13 +6,21 @@ var initHtmlRoutes = require('./app/routing/htmlRoutes.js');
 var PORT = process.env.PORT || 8080;
 
 var app = express();
+//check to see if initApiRoutes is pulling the correct info from ./app/routing/apiRoutes.js
+console.log(JSON.stringify(initApiRoutes));
 
 //handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/', initHtmlRoutes);
+
+
+//alternative way to export/initalize API routes
+// app.use('/', initHtmlRoutes);
+// app.use('/', initApiRoutes);
+
 // initialize API routes after body parser
 initApiRoutes(app);
+app.use('/', initHtmlRoutes);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);

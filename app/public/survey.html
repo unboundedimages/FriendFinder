@@ -164,7 +164,7 @@
     <option>4</option>
   <option>5</option>
   </select>
-            </div>>
+            </div>
             <br>
             <h3>
                 <li>The color silver means wisdom</li>
@@ -209,39 +209,35 @@
 
             $("#add-btn").on("click", function(event) {
                 event.preventDefault();
-                console.log($("#q1").val());
-                var newextroverts = [{
-                    routeName: $("#name").val().trim(),
-                    photo: $("#picture").val().trim(),
-                    score: $("#age").val().trim(),
-                }];
+                // console.log($("#q1").val());
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#picture").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
 
                 // Question: What does this code do??
-                $.post("/api/friend", newCharacter)
+                $.post("/api/friends", userData)
                     .done(function(data) {
                         console.log(data);
-                        alert("Adding character...");
+                        // alert("Adding character...");
                     });
             });
 
 
             // Create an object for the user"s data
-            var userData = {
-                name: $("#name").val(),
-                photo: $("#photo").val(),
-                scores: [
-                    $("#q1").val(),
-                    $("#q2").val(),
-                    $("#q3").val(),
-                    $("#q4").val(),
-                    $("#q5").val(),
-                    $("#q6").val(),
-                    $("#q7").val(),
-                    $("#q8").val(),
-                    $("#q9").val(),
-                    $("#q10").val()
-                ]
-            };
+
 
             //ends doc.ready
         });
