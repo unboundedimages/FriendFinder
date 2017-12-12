@@ -16,21 +16,9 @@ function initRoutes(app) {
     //* A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
     app.post("/api/friends", function(req, res) {
         var newextroverts = req.body;
-        var newscore = [];
-        var bestMatch = Infinity;
-        console.log("test test test test  " + JSON.stringify(newextroverts));
-        //first loop through friends.
-        for (i = 0; i < extroverts.length; i++) {
-            // totalDiff will hold the scores and be used in the math later on
-            var totalDiff = 0;
-            //time to compare friends
-            for (var j = 0; j < newextroverts.scores.length; i++) {
-                totalDiff += (Math.abs(parseInt(extroverts[i].scores[j]) - parseInt(newextroverts[j])));
-            }
-            newscore.push(totalDiff);
-        }
+        console.log("stuff " + newextroverts);
         // var score = newextroverts.score;
-        // console.log("this should just be score " + JSON.stringify(newscore));
+        // console.log("settle the score " + score);
         newextroverts.name = newextroverts.name.replace(/\s+/g, "").toLowerCase();
         for (var i = 0; i < newextroverts.length; i++) {
             console.log("new extroverts list " + newextroverts[i]);
